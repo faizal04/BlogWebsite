@@ -2,7 +2,8 @@
 .card {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: var(--color-dark--0);
+  color: #e0e0e0;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   overflow: hidden;
@@ -30,15 +31,22 @@
   font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 8px;
-  color: #333;
+  color: #ffffff;
 }
 
 .description {
   font-size: 0.9rem;
-  color: #666;
+  color: #ffffff;
   line-height: 1.4;
 }
+.data {
+  display: flex;
+  gap: 2rem;
+}
 .data p {
-  color: #333;
+  color: #fefefe;
   font-weight: 400;
+}
+.data p img {
+  height: 3rem;
 }

@@ -6,6 +6,10 @@
   padding: 3rem;
   background: #000;
 }
+.logo {
+  font-size: 30px;
+  color: aliceblue;
+}
 
 .nav ul {
   list-style: none;

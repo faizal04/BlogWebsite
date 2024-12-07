@@ -13,8 +13,12 @@ function Card({ title, description, image }) {
         <p className={styles.description}>{description}</p>
       </div>
       <div className={styles.data}>
-        <p>likes {likes}</p>
-        <p>comment {comment}</p>
+        <p>
+          <img className="likelogo" src="like.png" alt="" /> {likes}
+        </p>
+        <p>
+          <img className="commentlogo" src="comment.png" alt="" /> {comment}
+        </p>
       </div>
     </div>
   );

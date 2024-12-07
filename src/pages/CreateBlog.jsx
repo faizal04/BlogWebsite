@@ -1,7 +1,11 @@
+import Header from "../Components/Header";
+import Footer from "../Components/Footer";
 function CreateBlog() {
   return (
     <div>
-      <h1>here we will write blog</h1>
+      <Header />
+      <h1>here we have to write blog</h1>
+      <Footer />
     </div>
   );
 }
