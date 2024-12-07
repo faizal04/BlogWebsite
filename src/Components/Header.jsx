@@ -1,6 +1,9 @@
 import { NavLink } from "react-router-dom";
 import styles from "../Components/Header.module.css";
+import { useAuth } from "../contexts/Auth";
+import Profile from "./Profile";
 function Header() {
+  const { isauthorised } = useAuth();
   return (
     <nav className={styles.nav}>
       <div>
@@ -11,9 +14,14 @@ function Header() {
         <NavLink to="/">Home</NavLink>
         <NavLink to="/blog">Blog</NavLink>
         <NavLink to="/About">About</NavLink>
-        <NavLink to="/login" className={styles.ctaLink}>
-          Login
-        </NavLink>
+        {isauthorised && <NavLink to="/createblog">Create</NavLink>}
+        {isauthorised ? (
+          <Profile />
+        ) : (
+          <NavLink to="/login" className={styles.ctaLink}>
+            Login
+          </NavLink>
+        )}
       </ul>
     </nav>
   );

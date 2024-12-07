@@ -1,7 +1,11 @@
+import Footer from "../Components/Footer";
+import Header from "../Components/Header";
+
 function About() {
   return (
     <div>
-      <h1>About</h1>
+      <Header />
+      <Footer />
     </div>
   );
 }
